@@ -1,0 +1,91 @@
+
+:root{
+  display: flex;
+  background-color: white;
+  background-image: url("./assets/Gradient.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:cover;
+  justify-content: center;
+  width: 100vw;
+}
+.wrapper{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-box{
+  display: flex;
+  flex-direction: row;
+}
+.center{
+  background-color: white;
+  border-radius: 20px;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Space Grotesk', sans-serif;
+  text-align: left;
+  box-shadow: 2px 2px 5px;
+  transition: 100ms;
+  word-wrap: break-word;
+  width: 50vw;
+}
+
+
+p{
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: bold;
+  font-size: 3em;
+  color: black ;
+}
+
+.from-to{
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.button-swipe{
+  padding: 20px 25px 25px 25px;
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-size: 30px;
+  transition: 100ms;
+  height: 20%;
+  margin: 0 20px;
+  box-shadow: 5px 10px 20px #888888;
+}
+.button-swipe:hover{
+  background-color: aliceblue;
+}
+.button-swipe:active{
+  background-color:bisque;
+}
+
+#counter-top{
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 800px) {
+  :root{
+    width: 100%;
+  }
+  .title{
+    font-size: 1.6rem;
+  }
+  .from-to{
+    font-size: 1rem;
+    
+  }
+  #counter-top{
+    font-size: 1rem;
+  }
+  .button-swipe{
+    font-size: 1rem;
+    margin: 0 10px;
+  }
+}
